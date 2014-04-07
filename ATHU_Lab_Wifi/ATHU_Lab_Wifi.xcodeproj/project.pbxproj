@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD307CFE18F1AF8100C968C0 /* Wifi_badge.png in Resources */ = {isa = PBXBuildFile; fileRef = FD307CF918F1AF8100C968C0 /* Wifi_badge.png */; };
+		FD307CFF18F1AF8100C968C0 /* Wifi_checkbox_NO.png in Resources */ = {isa = PBXBuildFile; fileRef = FD307CFA18F1AF8100C968C0 /* Wifi_checkbox_NO.png */; };
+		FD307D0018F1AF8100C968C0 /* Wifi_checkbox_YES.png in Resources */ = {isa = PBXBuildFile; fileRef = FD307CFB18F1AF8100C968C0 /* Wifi_checkbox_YES.png */; };
+		FD307D0118F1AF8100C968C0 /* Wifi_title_01.png in Resources */ = {isa = PBXBuildFile; fileRef = FD307CFC18F1AF8100C968C0 /* Wifi_title_01.png */; };
+		FD307D0218F1AF8100C968C0 /* Wifi_title_02.png in Resources */ = {isa = PBXBuildFile; fileRef = FD307CFD18F1AF8100C968C0 /* Wifi_title_02.png */; };
+		FD4FEFD418F2BFBE002002F5 /* Wifi_title_01-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4FEFD218F2BFBE002002F5 /* Wifi_title_01-2.png */; };
+		FD4FEFD518F2BFBE002002F5 /* Wifi_title_02-2.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4FEFD318F2BFBE002002F5 /* Wifi_title_02-2.png */; };
+		FD4FEFD718F2C0DB002002F5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD4FEFD618F2C0DB002002F5 /* QuartzCore.framework */; };
+		FD4FEFD918F2C21B002002F5 /* Wifi_textFieldBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = FD4FEFD818F2C21B002002F5 /* Wifi_textFieldBorder.png */; };
+		FD6A77F918F03A0C00168B44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A77F818F03A0C00168B44 /* Foundation.framework */; };
+		FD6A77FB18F03A0C00168B44 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A77FA18F03A0C00168B44 /* CoreGraphics.framework */; };
+		FD6A77FD18F03A0C00168B44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A77FC18F03A0C00168B44 /* UIKit.framework */; };
+		FD6A780318F03A0C00168B44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD6A780118F03A0C00168B44 /* InfoPlist.strings */; };
+		FD6A780518F03A0C00168B44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6A780418F03A0C00168B44 /* main.m */; };
+		FD6A780918F03A0C00168B44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6A780818F03A0C00168B44 /* AppDelegate.m */; };
+		FD6A780B18F03A0C00168B44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6A780A18F03A0C00168B44 /* Images.xcassets */; };
+		FD6A781218F03A0C00168B44 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A781118F03A0C00168B44 /* XCTest.framework */; };
+		FD6A781318F03A0C00168B44 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A77F818F03A0C00168B44 /* Foundation.framework */; };
+		FD6A781418F03A0C00168B44 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6A77FC18F03A0C00168B44 /* UIKit.framework */; };
+		FD6A781C18F03A0C00168B44 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD6A781A18F03A0C00168B44 /* InfoPlist.strings */; };
+		FD6A781E18F03A0C00168B44 /* ATHU_Lab_WifiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6A781D18F03A0C00168B44 /* ATHU_Lab_WifiTests.m */; };
+		FD92A9E718F19BFB00407F65 /* QAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92A9DD18F19BFB00407F65 /* QAppDelegate.m */; };
+		FD92A9E818F19BFB00407F65 /* QViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92A9DE18F19BFB00407F65 /* QViewController.m */; };
+		FD92A9E918F19BFB00407F65 /* check_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9E318F19BFB00407F65 /* check_icon.png */; };
+		FD92A9EA18F19BFB00407F65 /* check_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9E418F19BFB00407F65 /* check_icon@2x.png */; };
+		FD92A9EB18F19BFB00407F65 /* uncheck_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9E518F19BFB00407F65 /* uncheck_icon.png */; };
+		FD92A9EC18F19BFB00407F65 /* uncheck_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9E618F19BFB00407F65 /* uncheck_icon@2x.png */; };
+		FD92A9F318F19C1C00407F65 /* QCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92A9ED18F19C1C00407F65 /* QCheckBox.m */; };
+		FD92A9F418F19C1C00407F65 /* checkbox1_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9EF18F19C1C00407F65 /* checkbox1_checked.png */; };
+		FD92A9F518F19C1C00407F65 /* checkbox1_checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9F018F19C1C00407F65 /* checkbox1_checked@2x.png */; };
+		FD92A9F618F19C1C00407F65 /* checkbox1_unchecked.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9F118F19C1C00407F65 /* checkbox1_unchecked.png */; };
+		FD92A9F718F19C1C00407F65 /* checkbox1_unchecked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FD92A9F218F19C1C00407F65 /* checkbox1_unchecked@2x.png */; };
+		FD92A9FB18F19E8800407F65 /* WifiCertificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92A9FA18F19E8800407F65 /* WifiCertificationVC.m */; };
+		FD92A9FE18F19EA400407F65 /* WifiCustomVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92A9FD18F19EA400407F65 /* WifiCustomVC.m */; };
+		FD92AA0118F19EC000407F65 /* GuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FD92AA0018F19EC000407F65 /* GuideVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD6A781518F03A0C00168B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6A77ED18F03A0C00168B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6A77F418F03A0C00168B44;
+			remoteInfo = ATHU_Lab_Wifi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD307CF918F1AF8100C968C0 /* Wifi_badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wifi_badge.png; sourceTree = "<group>"; };
+		FD307CFA18F1AF8100C968C0 /* Wifi_checkbox_NO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wifi_checkbox_NO.png; sourceTree = "<group>"; };
+		FD307CFB18F1AF8100C968C0 /* Wifi_checkbox_YES.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wifi_checkbox_YES.png; sourceTree = "<group>"; };
+		FD307CFC18F1AF8100C968C0 /* Wifi_title_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wifi_title_01.png; sourceTree = "<group>"; };
+		FD307CFD18F1AF8100C968C0 /* Wifi_title_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wifi_title_02.png; sourceTree = "<group>"; };
+		FD4FEFD218F2BFBE002002F5 /* Wifi_title_01-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wifi_title_01-2.png"; sourceTree = "<group>"; };
+		FD4FEFD318F2BFBE002002F5 /* Wifi_title_02-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wifi_title_02-2.png"; sourceTree = "<group>"; };
+		FD4FEFD618F2C0DB002002F5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FD4FEFD818F2C21B002002F5 /* Wifi_textFieldBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wifi_textFieldBorder.png; sourceTree = "<group>"; };
+		FD6A77F518F03A0C00168B44 /* ATHU_Lab_Wifi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ATHU_Lab_Wifi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6A77F818F03A0C00168B44 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD6A77FA18F03A0C00168B44 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FD6A77FC18F03A0C00168B44 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FD6A780018F03A0C00168B44 /* ATHU_Lab_Wifi-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ATHU_Lab_Wifi-Info.plist"; sourceTree = "<group>"; };
+		FD6A780218F03A0C00168B44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD6A780418F03A0C00168B44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD6A780618F03A0C00168B44 /* ATHU_Lab_Wifi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ATHU_Lab_Wifi-Prefix.pch"; sourceTree = "<group>"; };
+		FD6A780718F03A0C00168B44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD6A780818F03A0C00168B44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD6A780A18F03A0C00168B44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD6A781018F03A0C00168B44 /* ATHU_Lab_WifiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ATHU_Lab_WifiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6A781118F03A0C00168B44 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FD6A781918F03A0C00168B44 /* ATHU_Lab_WifiTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ATHU_Lab_WifiTests-Info.plist"; sourceTree = "<group>"; };
+		FD6A781B18F03A0C00168B44 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD6A781D18F03A0C00168B44 /* ATHU_Lab_WifiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ATHU_Lab_WifiTests.m; sourceTree = "<group>"; };
+		FD92A9DD18F19BFB00407F65 /* QAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAppDelegate.m; sourceTree = "<group>"; };
+		FD92A9DE18F19BFB00407F65 /* QViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QViewController.m; sourceTree = "<group>"; };
+		FD92A9DF18F19BFB00407F65 /* QCheckBoxDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "QCheckBoxDemo-Prefix.pch"; sourceTree = "<group>"; };
+		FD92A9E018F19BFB00407F65 /* QAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAppDelegate.h; sourceTree = "<group>"; };
+		FD92A9E118F19BFB00407F65 /* QViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QViewController.h; sourceTree = "<group>"; };
+		FD92A9E318F19BFB00407F65 /* check_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_icon.png; sourceTree = "<group>"; };
+		FD92A9E418F19BFB00407F65 /* check_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "check_icon@2x.png"; sourceTree = "<group>"; };
+		FD92A9E518F19BFB00407F65 /* uncheck_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uncheck_icon.png; sourceTree = "<group>"; };
+		FD92A9E618F19BFB00407F65 /* uncheck_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "uncheck_icon@2x.png"; sourceTree = "<group>"; };
+		FD92A9ED18F19C1C00407F65 /* QCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCheckBox.m; sourceTree = "<group>"; };
+		FD92A9EE18F19C1C00407F65 /* QCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCheckBox.h; sourceTree = "<group>"; };
+		FD92A9EF18F19C1C00407F65 /* checkbox1_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox1_checked.png; path = ../checkbox1_checked.png; sourceTree = "<group>"; };
+		FD92A9F018F19C1C00407F65 /* checkbox1_checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox1_checked@2x.png"; path = "../checkbox1_checked@2x.png"; sourceTree = "<group>"; };
+		FD92A9F118F19C1C00407F65 /* checkbox1_unchecked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = checkbox1_unchecked.png; path = ../checkbox1_unchecked.png; sourceTree = "<group>"; };
+		FD92A9F218F19C1C00407F65 /* checkbox1_unchecked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "checkbox1_unchecked@2x.png"; path = "../checkbox1_unchecked@2x.png"; sourceTree = "<group>"; };
+		FD92A9F918F19E8800407F65 /* WifiCertificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiCertificationVC.h; sourceTree = "<group>"; };
+		FD92A9FA18F19E8800407F65 /* WifiCertificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiCertificationVC.m; sourceTree = "<group>"; };
+		FD92A9FC18F19EA400407F65 /* WifiCustomVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WifiCustomVC.h; sourceTree = "<group>"; };
+		FD92A9FD18F19EA400407F65 /* WifiCustomVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WifiCustomVC.m; sourceTree = "<group>"; };
+		FD92A9FF18F19EC000407F65 /* GuideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuideVC.h; sourceTree = "<group>"; };
+		FD92AA0018F19EC000407F65 /* GuideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD6A77F218F03A0C00168B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4FEFD718F2C0DB002002F5 /* QuartzCore.framework in Frameworks */,
+				FD6A77FB18F03A0C00168B44 /* CoreGraphics.framework in Frameworks */,
+				FD6A77FD18F03A0C00168B44 /* UIKit.framework in Frameworks */,
+				FD6A77F918F03A0C00168B44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6A780D18F03A0C00168B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6A781218F03A0C00168B44 /* XCTest.framework in Frameworks */,
+				FD6A781418F03A0C00168B44 /* UIKit.framework in Frameworks */,
+				FD6A781318F03A0C00168B44 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD6A77EC18F03A0C00168B44 = {
+			isa = PBXGroup;
+			children = (
+				FD6A77FE18F03A0C00168B44 /* ATHU_Lab_Wifi */,
+				FD6A781718F03A0C00168B44 /* ATHU_Lab_WifiTests */,
+				FD6A77F718F03A0C00168B44 /* Frameworks */,
+				FD6A77F618F03A0C00168B44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD6A77F618F03A0C00168B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD6A77F518F03A0C00168B44 /* ATHU_Lab_Wifi.app */,
+				FD6A781018F03A0C00168B44 /* ATHU_Lab_WifiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD6A77F718F03A0C00168B44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD4FEFD618F2C0DB002002F5 /* QuartzCore.framework */,
+				FD6A77F818F03A0C00168B44 /* Foundation.framework */,
+				FD6A77FA18F03A0C00168B44 /* CoreGraphics.framework */,
+				FD6A77FC18F03A0C00168B44 /* UIKit.framework */,
+				FD6A781118F03A0C00168B44 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD6A77FE18F03A0C00168B44 /* ATHU_Lab_Wifi */ = {
+			isa = PBXGroup;
+			children = (
+				FD92A9F818F19DB200407F65 /* CheckBox */,
+				FD6A780718F03A0C00168B44 /* AppDelegate.h */,
+				FD6A780818F03A0C00168B44 /* AppDelegate.m */,
+				FD92A9FF18F19EC000407F65 /* GuideVC.h */,
+				FD92AA0018F19EC000407F65 /* GuideVC.m */,
+				FD92A9F918F19E8800407F65 /* WifiCertificationVC.h */,
+				FD92A9FA18F19E8800407F65 /* WifiCertificationVC.m */,
+				FD92A9FC18F19EA400407F65 /* WifiCustomVC.h */,
+				FD92A9FD18F19EA400407F65 /* WifiCustomVC.m */,
+				FD6A780A18F03A0C00168B44 /* Images.xcassets */,
+				FD6A77FF18F03A0C00168B44 /* Supporting Files */,
+			);
+			path = ATHU_Lab_Wifi;
+			sourceTree = "<group>";
+		};
+		FD6A77FF18F03A0C00168B44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD92A9E218F19BFB00407F65 /* images */,
+				FD6A780018F03A0C00168B44 /* ATHU_Lab_Wifi-Info.plist */,
+				FD6A780118F03A0C00168B44 /* InfoPlist.strings */,
+				FD6A780418F03A0C00168B44 /* main.m */,
+				FD6A780618F03A0C00168B44 /* ATHU_Lab_Wifi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD6A781718F03A0C00168B44 /* ATHU_Lab_WifiTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6A781D18F03A0C00168B44 /* ATHU_Lab_WifiTests.m */,
+				FD6A781818F03A0C00168B44 /* Supporting Files */,
+			);
+			path = ATHU_Lab_WifiTests;
+			sourceTree = "<group>";
+		};
+		FD6A781818F03A0C00168B44 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD6A781918F03A0C00168B44 /* ATHU_Lab_WifiTests-Info.plist */,
+				FD6A781A18F03A0C00168B44 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD92A9E218F19BFB00407F65 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				FD4FEFD818F2C21B002002F5 /* Wifi_textFieldBorder.png */,
+				FD4FEFD218F2BFBE002002F5 /* Wifi_title_01-2.png */,
+				FD4FEFD318F2BFBE002002F5 /* Wifi_title_02-2.png */,
+				FD307CF918F1AF8100C968C0 /* Wifi_badge.png */,
+				FD307CFA18F1AF8100C968C0 /* Wifi_checkbox_NO.png */,
+				FD307CFB18F1AF8100C968C0 /* Wifi_checkbox_YES.png */,
+				FD307CFC18F1AF8100C968C0 /* Wifi_title_01.png */,
+				FD307CFD18F1AF8100C968C0 /* Wifi_title_02.png */,
+				FD92A9EF18F19C1C00407F65 /* checkbox1_checked.png */,
+				FD92A9F018F19C1C00407F65 /* checkbox1_checked@2x.png */,
+				FD92A9F118F19C1C00407F65 /* checkbox1_unchecked.png */,
+				FD92A9F218F19C1C00407F65 /* checkbox1_unchecked@2x.png */,
+				FD92A9E318F19BFB00407F65 /* check_icon.png */,
+				FD92A9E418F19BFB00407F65 /* check_icon@2x.png */,
+				FD92A9E518F19BFB00407F65 /* uncheck_icon.png */,
+				FD92A9E618F19BFB00407F65 /* uncheck_icon@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		FD92A9F818F19DB200407F65 /* CheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				FD92A9ED18F19C1C00407F65 /* QCheckBox.m */,
+				FD92A9EE18F19C1C00407F65 /* QCheckBox.h */,
+				FD92A9DD18F19BFB00407F65 /* QAppDelegate.m */,
+				FD92A9DE18F19BFB00407F65 /* QViewController.m */,
+				FD92A9DF18F19BFB00407F65 /* QCheckBoxDemo-Prefix.pch */,
+				FD92A9E018F19BFB00407F65 /* QAppDelegate.h */,
+				FD92A9E118F19BFB00407F65 /* QViewController.h */,
+			);
+			name = CheckBox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD6A77F418F03A0C00168B44 /* ATHU_Lab_Wifi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6A782118F03A0C00168B44 /* Build configuration list for PBXNativeTarget "ATHU_Lab_Wifi" */;
+			buildPhases = (
+				FD6A77F118F03A0C00168B44 /* Sources */,
+				FD6A77F218F03A0C00168B44 /* Frameworks */,
+				FD6A77F318F03A0C00168B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATHU_Lab_Wifi;
+			productName = ATHU_Lab_Wifi;
+			productReference = FD6A77F518F03A0C00168B44 /* ATHU_Lab_Wifi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD6A780F18F03A0C00168B44 /* ATHU_Lab_WifiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6A782418F03A0C00168B44 /* Build configuration list for PBXNativeTarget "ATHU_Lab_WifiTests" */;
+			buildPhases = (
+				FD6A780C18F03A0C00168B44 /* Sources */,
+				FD6A780D18F03A0C00168B44 /* Frameworks */,
+				FD6A780E18F03A0C00168B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6A781618F03A0C00168B44 /* PBXTargetDependency */,
+			);
+			name = ATHU_Lab_WifiTests;
+			productName = ATHU_Lab_WifiTests;
+			productReference = FD6A781018F03A0C00168B44 /* ATHU_Lab_WifiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD6A77ED18F03A0C00168B44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Peaceminds;
+				TargetAttributes = {
+					FD6A780F18F03A0C00168B44 = {
+						TestTargetID = FD6A77F418F03A0C00168B44;
+					};
+				};
+			};
+			buildConfigurationList = FD6A77F018F03A0C00168B44 /* Build configuration list for PBXProject "ATHU_Lab_Wifi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD6A77EC18F03A0C00168B44;
+			productRefGroup = FD6A77F618F03A0C00168B44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD6A77F418F03A0C00168B44 /* ATHU_Lab_Wifi */,
+				FD6A780F18F03A0C00168B44 /* ATHU_Lab_WifiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD6A77F318F03A0C00168B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD92A9EA18F19BFB00407F65 /* check_icon@2x.png in Resources */,
+				FD6A780318F03A0C00168B44 /* InfoPlist.strings in Resources */,
+				FD307D0118F1AF8100C968C0 /* Wifi_title_01.png in Resources */,
+				FD307CFE18F1AF8100C968C0 /* Wifi_badge.png in Resources */,
+				FD92A9F718F19C1C00407F65 /* checkbox1_unchecked@2x.png in Resources */,
+				FD4FEFD418F2BFBE002002F5 /* Wifi_title_01-2.png in Resources */,
+				FD307CFF18F1AF8100C968C0 /* Wifi_checkbox_NO.png in Resources */,
+				FD6A780B18F03A0C00168B44 /* Images.xcassets in Resources */,
+				FD4FEFD518F2BFBE002002F5 /* Wifi_title_02-2.png in Resources */,
+				FD92A9F518F19C1C00407F65 /* checkbox1_checked@2x.png in Resources */,
+				FD4FEFD918F2C21B002002F5 /* Wifi_textFieldBorder.png in Resources */,
+				FD92A9EB18F19BFB00407F65 /* uncheck_icon.png in Resources */,
+				FD92A9E918F19BFB00407F65 /* check_icon.png in Resources */,
+				FD92A9F618F19C1C00407F65 /* checkbox1_unchecked.png in Resources */,
+				FD92A9F418F19C1C00407F65 /* checkbox1_checked.png in Resources */,
+				FD307D0218F1AF8100C968C0 /* Wifi_title_02.png in Resources */,
+				FD92A9EC18F19BFB00407F65 /* uncheck_icon@2x.png in Resources */,
+				FD307D0018F1AF8100C968C0 /* Wifi_checkbox_YES.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6A780E18F03A0C00168B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6A781C18F03A0C00168B44 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD6A77F118F03A0C00168B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6A780918F03A0C00168B44 /* AppDelegate.m in Sources */,
+				FD92A9E818F19BFB00407F65 /* QViewController.m in Sources */,
+				FD92A9F318F19C1C00407F65 /* QCheckBox.m in Sources */,
+				FD92AA0118F19EC000407F65 /* GuideVC.m in Sources */,
+				FD92A9E718F19BFB00407F65 /* QAppDelegate.m in Sources */,
+				FD92A9FB18F19E8800407F65 /* WifiCertificationVC.m in Sources */,
+				FD6A780518F03A0C00168B44 /* main.m in Sources */,
+				FD92A9FE18F19EA400407F65 /* WifiCustomVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6A780C18F03A0C00168B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6A781E18F03A0C00168B44 /* ATHU_Lab_WifiTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6A781618F03A0C00168B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6A77F418F03A0C00168B44 /* ATHU_Lab_Wifi */;
+			targetProxy = FD6A781518F03A0C00168B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD6A780118F03A0C00168B44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6A780218F03A0C00168B44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FD6A781A18F03A0C00168B44 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6A781B18F03A0C00168B44 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD6A781F18F03A0C00168B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD6A782018F03A0C00168B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6A782218F03A0C00168B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATHU_Lab_Wifi/ATHU_Lab_Wifi-Prefix.pch";
+				INFOPLIST_FILE = "ATHU_Lab_Wifi/ATHU_Lab_Wifi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FD6A782318F03A0C00168B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATHU_Lab_Wifi/ATHU_Lab_Wifi-Prefix.pch";
+				INFOPLIST_FILE = "ATHU_Lab_Wifi/ATHU_Lab_Wifi-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FD6A782518F03A0C00168B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ATHU_Lab_Wifi.app/ATHU_Lab_Wifi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATHU_Lab_Wifi/ATHU_Lab_Wifi-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ATHU_Lab_WifiTests/ATHU_Lab_WifiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FD6A782618F03A0C00168B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ATHU_Lab_Wifi.app/ATHU_Lab_Wifi";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ATHU_Lab_Wifi/ATHU_Lab_Wifi-Prefix.pch";
+				INFOPLIST_FILE = "ATHU_Lab_WifiTests/ATHU_Lab_WifiTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD6A77F018F03A0C00168B44 /* Build configuration list for PBXProject "ATHU_Lab_Wifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6A781F18F03A0C00168B44 /* Debug */,
+				FD6A782018F03A0C00168B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6A782118F03A0C00168B44 /* Build configuration list for PBXNativeTarget "ATHU_Lab_Wifi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6A782218F03A0C00168B44 /* Debug */,
+				FD6A782318F03A0C00168B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6A782418F03A0C00168B44 /* Build configuration list for PBXNativeTarget "ATHU_Lab_WifiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6A782518F03A0C00168B44 /* Debug */,
+				FD6A782618F03A0C00168B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD6A77ED18F03A0C00168B44 /* Project object */;
+}
